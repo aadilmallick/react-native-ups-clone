@@ -1,0 +1,19 @@
+type Firebaseio {
+  """
+  Object typed as JSON since it has fields ["-N6rOmxa7vOOTpZZSllL", "-N6rQgCkbLPB1xElUchT", "-N6rSJ4xI3_Cq7u58Wh_", "-N6rSZB4AoMAwrDnm2jF", "-N6rTRzW_JrkHQMdt5QA"] that are invalid graphql identifiers
+  """
+  customers: JSON
+  """
+  Object typed as JSON since it has fields ["-N6rOvLXK2t39x-Bp0UP", "-N6rQ_YDMNTjq_mCbhZN", "-N6rQsEqX4vt-0cBA336", "-N6rQvnBSkz2kglMvr5H", "-N6rSQz62DlXFPbd32CD"] that are invalid graphql identifiers
+  """
+  orders: JSON
+  """
+  Object typed as JSON since it has fields ["1Z4V180W0324616505", "1Z881F5V0397269080", "1ZCL1F5V0397269023", "1ZS31F5V039722343", "1ZS31F5V0397294994"] that are invalid graphql identifiers
+  """
+  trackingItems: JSON
+}
+
+type Query {
+  firebaseioQuery: Firebaseio
+    @rest(endpoint: "https://ups-clone-42e0b-default-rtdb.firebaseio.com/.json")
+}

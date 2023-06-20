@@ -1,0 +1,17 @@
+type Order {
+  Address: String
+  City: String
+  Lat: Float
+  Lng: Float
+  carrier: String
+  createdAt: Date
+  shippingCost: Int
+  trackingId: String
+}
+
+type Query {
+  getOrders: [Order]
+    @rest(
+      endpoint: "https://ups-clone-42e0b-default-rtdb.firebaseio.com/orders/-N6rOvLXK2t39x-Bp0UP.json"
+    )
+}

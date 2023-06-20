@@ -1,0 +1,11 @@
+type Customer {
+  email: String
+  name: String
+}
+
+type Query {
+  getCustomers: [Customer]
+    @rest(
+      endpoint: "https://ups-clone-42e0b-default-rtdb.firebaseio.com/customers.json"
+    )
+}
